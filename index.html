@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Raysha Ayunda</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><span>RAYSHA AYUNDA PUTRI DIESTA</span></h1>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>Halo, saya <span>Raysha Ayunda</span></h2>
+      <p>Seorang <b>Web Developer</b> yang fokus pada tampilan modern dan pengalaman pengguna yang baik.</p>
+      <a href="#contact" class="btn">Hubungi Saya</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/raysha.jpg" alt="Foto Raysha Ayunda">
+    </div>
+  </div>
+</section>
+
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah pengembang web front-end yang senang menciptakan tampilan menarik dan responsif.
+         Saya menguasai HTML, CSS, dan JavaScript serta framework seperti Laravel dan Flutter.
+         Tujuan saya adalah membuat website yang cepat, intuitif, dan mudah digunakan.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <div>HTML</div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <div>CSS</div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <div>JavaScript</div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-laravel"></i>
+          <div>Laravel</div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-flutter"></i>
+          <div>Flutter</div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-github"></i>
+          <div>GitHub</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Proyek</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Website Klinik Hewan</h3>
+          <p>Sistem informasi klinik hewan berbasis Laravel dan Blade, dilengkapi dengan CRUD dan fitur appointment.</p>
+        </div>
+        <div class="project-card">
+          <h3>Aplikasi Flutter Perpustakaan</h3>
+          <p>Aplikasi mobile CRUD dengan integrasi API Laravel dan tampilan modern berbasis Material Design.</p>
+        </div>
+        <div class="project-card">
+          <h3>Landing Page UMKM</h3>
+          <p>Landing page promosi produk lokal dengan desain interaktif dan SEO-friendly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Kontak Saya</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Pesan" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Raysha Ayunda — Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
