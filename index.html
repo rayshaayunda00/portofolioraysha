@@ -1,122 +1,806 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Raysha Ayunda</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Raysha Ayunda Putri Diesta — Laravel Web Developer</title>
+  <meta name="description" content="Portofolio resmi Raysha Ayunda Putri Diesta, Web Developer yang berfokus pada pengembangan sistem berbasis web modern dengan Laravel, Livewire, dan Tailwind CSS.">
+  <meta name="keywords" content="Raysha Ayunda Putri Diesta, Web Developer, Laravel Developer, Livewire, Tailwind CSS, MySQL, Portofolio, Web Developer Indonesia">
+  <meta name="author" content="Raysha Ayunda Putri Diesta">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1120">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <!-- TODO: isi dengan domain asli setelah deploy (mis. <meta property="og:url" content="https://domain-anda.com"> dan <link rel="canonical" href="https://domain-anda.com">) -->
+  <meta property="og:site_name" content="Portofolio Raysha Ayunda Putri Diesta">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Raysha Ayunda Putri Diesta — Laravel Web Developer">
+  <meta property="og:description" content="Jelajahi proyek sistem berbasis web dengan framework Laravel, keahlian teknis, pengalaman, dan sertifikasi Raysha Ayunda Putri Diesta.">
+  <!-- TODO: ganti dengan URL absolut domain asli setelah deploy (contoh: https://domain-anda.com/images/raysha.jpg) -->
+  <meta property="og:image" content="https://TODO_DOMAIN/images/raysha.jpg">
+  <meta property="og:image:alt" content="Foto Profil Raysha Ayunda Putri Diesta">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Raysha Ayunda Putri Diesta — Laravel Web Developer">
+  <meta name="twitter:description" content="Jelajahi proyek sistem berbasis web dengan framework Laravel, keahlian teknis, pengalaman, dan sertifikasi Raysha Ayunda Putri Diesta.">
+  <!-- TODO: ganti dengan URL absolut domain asli setelah deploy (contoh: https://domain-anda.com/images/raysha.jpg) -->
+  <meta name="twitter:image" content="https://TODO_DOMAIN/images/raysha.jpg">
+
+  <!-- Favicon SVG Modern -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%2338bdf8'/><stop offset='100%' stop-color='%23818cf8'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='%230f172a'/><text x='50%' y='68%' font-size='56' font-family='sans-serif' font-weight='bold' fill='url(%23g)' text-anchor='middle'>R</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display (Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo"><span>RAYSHA AYUNDA PUTRI DIESTA</span></h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#skills">Keahlian</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
+
+  <!-- ==============================================
+       HEADER & NAVBAR
+  =============================================== -->
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Navigasi Utama">
+      <a href="#home" class="logo" aria-label="Beranda Raysha Ayunda">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">Raysha<span>Ayunda</span></span>
+      </a>
+
+      <!-- Menu Navigasi Desktop & Mobile Drawer -->
+      <div class="nav-menu-wrapper" id="nav-menu-wrapper">
+        <ul class="nav-links" id="nav-links" role="menubar">
+          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">Tentang</a></li>
+          <li role="none"><a href="#skills" class="nav-link" role="menuitem">Keahlian</a></li>
+          <li role="none"><a href="#experience" class="nav-link" role="menuitem">Pengalaman</a></li>
+          <li role="none"><a href="#projects" class="nav-link" role="menuitem">Proyek</a></li>
+          <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Sertifikasi</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Action Controls: Theme Toggle & Hamburger Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon theme-toggle" aria-label="Ganti mode tampilan gelap atau terang" type="button">
+          <i class="fas fa-sun theme-icon-light" aria-hidden="true"></i>
+          <i class="fas fa-moon theme-icon-dark" aria-hidden="true"></i>
+        </button>
+
+        <button id="hamburger" class="btn-icon hamburger" aria-label="Buka navigasi menu" aria-expanded="false" aria-controls="nav-menu-wrapper" type="button">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h2>Halo, saya <span>Raysha Ayunda</span></h2>
-      <p>Seorang <b>Web Developer</b> yang fokus pada tampilan modern dan pengalaman pengguna yang baik.</p>
-      <a href="#contact" class="btn">Hubungi Saya</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/raysha.jpg" alt="Foto Raysha Ayunda">
+  <main id="main-content">
+    <!-- ==============================================
+         HERO SECTION (#home)
+    =============================================== -->
+    <section id="home" class="hero section">
+      <div class="hero-bg-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-bg-glow hero-glow-2" aria-hidden="true"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-text">
+          <div class="hero-badge reveal">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Terbuka untuk Peluang Kerja & Kolaborasi</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Halo, saya <br>
+            <span class="gradient-text">Raysha Ayunda Putri Diesta</span>
+          </h1>
+
+          <div class="hero-subtitle reveal" aria-label="Laravel Web Developer">
+            <!-- <span class="typing-prefix">Spesialisasi: </span> -->
+            <span id="typing-text" class="typing-text"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-desc reveal">
+            Pengembang web yang berfokus membangun sistem informasi dan aplikasi web modern, fungsional, serta terstruktur menggunakan ekosistem Laravel, Livewire, dan Tailwind CSS.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Proyek</span>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="files/RayshaAyundaPutriDiesta-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <span class="socials-label">Terhubung:</span>
+            <div class="social-links">
+              <a href="https://github.com/rayshaayunda00" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Kunjungi profil GitHub Raysha">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/raysha-ayunda-putri-diesta-b150511ab" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Kunjungi profil LinkedIn Raysha">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:rayshaayuda@gmail.com" class="social-link" aria-label="Kirim email ke Raysha">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-wrapper">
+            <div class="avatar-backdrop" aria-hidden="true"></div>
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <img src="images/Raysha_Jas.jpeg" alt="Foto Profil Raysha Ayunda Putri Diesta" class="avatar-img" width="400" height="400" fetchpriority="high">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         TENTANG SAYA (#about)
+    =============================================== -->
+    <section id="about" class="about section">
+      <div class="container about-container reveal">
+        <h2 class="section-title about-title">Tentang Saya</h2>
+        <span class="about-divider" aria-hidden="true"></span>
+        <!-- Kartu Profil Modern (Menyatu) -->
+        <div class="about-profile-card reveal" id="about-profile-card">
+          <!-- Kolom Kiri: Foto Profil Lingkaran -->
+          <div class="profile-avatar-col">
+            <div class="profile-avatar-wrapper">
+              <div class="profile-avatar-ring">
+                <div class="profile-avatar-inner">
+                  <img src="images/rayshaLatarPutih.png" alt="Foto Raysha Ayunda Putri Diesta" class="profile-avatar-img" width="220" height="220" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Detail Profil -->
+          <div class="profile-content-col">
+            <!-- (a) Nama & Verified Badge -->
+            <div class="profile-name-row">
+              <h3 class="profile-name">RAYSHA AYUNDA PUTRI DIESTA</h3>
+              <span class="profile-verified-badge" title="Profil Terverifikasi" aria-label="Terverifikasi">
+                <i class="fas fa-circle-check" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <!-- (b) Peran di bawah nama -->
+            <p class="profile-role">Web Developer · Laravel </p>
+
+            <!-- (c) Paragraf Deskripsi (Teks asli tanpa perubahan) -->
+            <p class="profile-bio">
+              Saya memiliki ketertarikan yang kuat di bidang IT, khususnya dalam pengembangan sistem berbasis web. Berbekal latar belakang Diploma Manajemen Informatika serta pengalaman praktis dalam membangun aplikasi dengan Laravel, saya terbiasa merancang sistem yang fungsional dan terstruktur.
+            </p>
+
+            <!-- (d) Garis Pemisah Tipis & Baris Statistik Dua Kolom -->
+            <div class="profile-divider" aria-hidden="true"></div>
+
+            <div class="profile-stats">
+              <div class="profile-stat-item">
+                <span class="profile-stat-label">SERTIFIKAT</span>
+                <span class="profile-stat-value" id="profile-stat-certs">0</span>
+              </div>
+              <div class="profile-stat-divider" aria-hidden="true"></div>
+              <div class="profile-stat-item">
+                <span class="profile-stat-label">LULUS</span>
+                <span class="profile-stat-value" id="profile-stat-graduation">0</span>
+              </div>
+            </div>
+
+            <!-- (e) Kartu Pendidikan di paling bawah kolom kanan -->
+            <div class="profile-education-card">
+              <div class="profile-education-icon" aria-hidden="true">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="profile-education-info">
+                <div class="profile-education-degree">D3 — Manajemen Informatika</div>
+                <div class="profile-education-school">Politeknik Negeri Padang · 2023 – 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         KEAHLIAN & TEKNOLOGI (#skills)
+    =============================================== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header skills-header reveal">
+          <h2 class="section-title skills-title">Keahlian</h2>
+          <span class="skills-divider" aria-hidden="true"></span>
+          <p class="section-subtitle">Teknologi, perangkat, dan kemampuan yang saya gunakan dalam setiap proyek.</p>
+        </div>
+
+        <div class="skills-groups">
+          <!-- Kelompok 1: Hard Skills -->
+          <article class="skills-card skills-card-hard reveal">
+            <div class="skills-card-header">
+              <div class="skills-card-icon" aria-hidden="true">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="skills-card-title">Hard Skills</h3>
+            </div>
+            <div class="skills-card-content">
+              <!-- Sub-grup 1: Pemrograman -->
+              <div class="skills-subgroup">
+                <span class="skills-subgroup-label">Pemrograman</span>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fab fa-php text-primary" aria-hidden="true"></i> PHP</span>
+                  <span class="skill-chip"><i class="fab fa-js text-js" aria-hidden="true"></i> JavaScript</span>
+                  <span class="skill-chip"><i class="fab fa-html5 text-html" aria-hidden="true"></i> HTML</span>
+                  <span class="skill-chip"><i class="fab fa-css3-alt text-css" aria-hidden="true"></i> CSS</span>
+                  <span class="skill-chip">Dart</span>
+                  <span class="skill-chip">Kotlin</span>
+                </div>
+              </div>
+
+              <!-- Sub-grup 2: Framework -->
+              <div class="skills-subgroup">
+                <span class="skills-subgroup-label">Framework</span>
+                <div class="skills-chips">
+                  <span class="skill-chip skill-chip-featured"><i class="fab fa-laravel text-laravel" aria-hidden="true"></i> Laravel</span>
+                  <span class="skill-chip skill-chip-featured"><i class="fas fa-bolt text-primary" aria-hidden="true"></i> Livewire</span>
+                  <span class="skill-chip"><i class="fab fa-css3-alt text-css" aria-hidden="true"></i> Tailwind CSS</span>
+                  <span class="skill-chip"><i class="fas fa-mobile-screen text-flutter" aria-hidden="true"></i> Flutter</span>
+                </div>
+              </div>
+
+              <!-- Sub-grup 3: Database -->
+              <div class="skills-subgroup">
+                <span class="skills-subgroup-label">Database</span>
+                <div class="skills-chips">
+                  <span class="skill-chip"><i class="fas fa-database text-database" aria-hidden="true"></i> MySQL</span>
+                  <span class="skill-chip"><i class="fas fa-database text-secondary" aria-hidden="true"></i> PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kelompok 2: Tools -->
+          <article class="skills-card skills-card-tools reveal">
+            <div class="skills-card-header">
+              <div class="skills-card-icon" aria-hidden="true">
+                <i class="fas fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="skills-card-title">Tools</h3>
+            </div>
+            <div class="skills-card-content">
+              <div class="skills-chips">
+                <span class="skill-chip"><i class="fas fa-code" aria-hidden="true"></i> Visual Studio Code</span>
+                <span class="skill-chip"><i class="fas fa-mobile-screen" aria-hidden="true"></i> Android Studio</span>
+                <span class="skill-chip"><i class="fas fa-paper-plane" aria-hidden="true"></i> Postman</span>
+                <span class="skill-chip"><i class="fab fa-figma" aria-hidden="true"></i> Figma</span>
+                <span class="skill-chip"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+                <span class="skill-chip"><i class="fab fa-docker" aria-hidden="true"></i> Docker</span>
+                <span class="skill-chip"><i class="fas fa-file-word" aria-hidden="true"></i> Microsoft Word &amp; PowerPoint</span>
+                <span class="skill-chip"><i class="fas fa-chart-pie" aria-hidden="true"></i> Looker Studio</span>
+                <span class="skill-chip"><i class="fas fa-palette" aria-hidden="true"></i> Canva</span>
+                <span class="skill-chip"><i class="fas fa-diagram-project" aria-hidden="true"></i> Enterprise Architect / Sparx EA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kelompok 3: Soft Skills -->
+          <article class="skills-card skills-card-soft reveal">
+            <div class="skills-card-header">
+              <div class="skills-card-icon" aria-hidden="true">
+                <i class="fas fa-people-group"></i>
+              </div>
+              <h3 class="skills-card-title">Soft Skills</h3>
+            </div>
+            <div class="skills-card-content">
+              <div class="skills-chips">
+                <span class="skill-chip"><i class="fas fa-people-group" aria-hidden="true"></i> Kerja Tim</span>
+                <span class="skill-chip"><i class="fas fa-clock" aria-hidden="true"></i> Manajemen Waktu</span>
+                <span class="skill-chip"><i class="fas fa-shield-halved" aria-hidden="true"></i> Tanggung Jawab</span>
+                <span class="skill-chip"><i class="fas fa-arrows-rotate" aria-hidden="true"></i> Fleksibilitas</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PENGALAMAN KERJA / ORGANISASI (#experience)
+    =============================================== -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Jejak Langkah</span>
+          <h2 class="section-title">Pengalaman</h2>
+          <p class="section-subtitle">Pengalaman kerja, proyek profesional, dan kegiatan organisasi yang telah saya jalani.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item: PT. Digitama Sinergi Indonesia -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <header class="timeline-card-header">
+                <div class="timeline-card-title-group">
+                  <h3 class="timeline-role">Junior Data Analyst</h3>
+                  <p class="timeline-company">PT. Digitama Sinergi Indonesia</p>
+                  <div class="timeline-meta">
+                    <span class="timeline-type-badge">Magang · 4 Bulan</span>
+                    <span class="timeline-meta-divider" aria-hidden="true">•</span>
+                    <span class="timeline-location" title="DTA Square (Downtown Area), Jl. Seturan Raya No.9A, Kledokan, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281">
+                      <i class="fas fa-location-dot" aria-hidden="true"></i> Sleman, Daerah Istimewa Yogyakarta
+                    </span>
+                  </div>
+                </div>
+                <div class="timeline-period-wrapper">
+                  <span class="timeline-period">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i> Februari 2026 – Juni 2026
+                  </span>
+                </div>
+              </header>
+
+              <!-- 4 Poin Tugas Pertama -->
+              <ul class="timeline-tasks">
+                <li>Menyusun dan memetakan Arsitektur SPBE (Sistem Pemerintahan Berbasis Elektronik) untuk beberapa pemerintah daerah dan instansi pusat pada sistem SIA-SPBE, mencakup domain Proses Bisnis, Layanan, Data dan Informasi, Aplikasi, serta Infrastruktur.</li>
+                <li>Membuat berbagai diagram arsitektur, antara lain BPMN, FAD, Access Diagram, Katalog GAP, Peta Strategi, Peta Rencana, dan KPI Allocation, untuk menggambarkan keterkaitan proses kerja, layanan publik, dan data.</li>
+                <li>Memodelkan alur proses bisnis instansi ke dalam diagram BPMN dan memperbaiki diagram yang sudah ada, termasuk melengkapi simbol start/end dan mengganti gambar yang buram.</li>
+                <li>Menyusun dan melengkapi data layanan, data, dan proses bisnis pemerintah daerah ke dalam spreadsheet acuan, meliputi tujuan, fungsi, manfaat, risiko dan mitigasi, serta input dan output informasi.</li>
+              </ul>
+
+              <!-- 4 Poin Tugas Lanjutan (Expandable) -->
+              <div class="timeline-expandable" id="experience-more-tasks">
+                <div class="timeline-expandable-inner">
+                  <ul class="timeline-tasks timeline-tasks-extra">
+                    <li>Memeriksa dokumen sumber dan mencocokkan data antar-sheet agar konsisten, serta mencatat kendala dokumen untuk ditindaklanjuti.</li>
+                    <li>Membuat dan menyusun ulang dashboard visualisasi data interaktif menggunakan Looker, termasuk dashboard Arsitektur SPBE yang mencakup 4 domain.</li>
+                    <li>Berkoordinasi rutin dengan mentor melalui pertemuan daring untuk review progres dan menerima arahan teknis.</li>
+                    <li>Menyusun artikel tentang layanan kesehatan berbasis AI atas penugasan Direktur.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tombol Buka / Tutup Selengkapnya -->
+              <button type="button" class="btn-timeline-toggle" id="experience-toggle-btn" aria-expanded="false" aria-controls="experience-more-tasks">
+                <span class="toggle-text">Lihat selengkapnya</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+
+              <!-- Tag Teknologi / Tools -->
+              <div class="timeline-tags">
+                <span class="timeline-tag">SIA-SPBE</span>
+                <span class="timeline-tag">BPMN</span>
+                <span class="timeline-tag">Looker Studio</span>
+                <span class="timeline-tag">Spreadsheet</span>
+                <span class="timeline-tag">Data Visualization</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PROYEK PILIHAN (#projects)
+    =============================================== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Karya & Eksplorasi</span>
+          <h2 class="section-title">Proyek Pilihan</h2>
+          <p class="section-subtitle">Beberapa aplikasi dan sistem terpilih yang pernah saya rancang dan kembangkan.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Proyek 1: Percetakan Arjuna -->
+          <article class="project-card reveal" data-project-index="0" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail proyek Percetakan Arjuna">
+            <div class="project-cover">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dot dot-red" aria-hidden="true"></span>
+                  <span class="browser-dot dot-yellow" aria-hidden="true"></span>
+                  <span class="browser-dot dot-green" aria-hidden="true"></span>
+                </div>
+                <div class="browser-window-content">
+                  <img src="images/percetakan-arjuna.png" alt="Tampilan sistem manajemen order Percetakan Arjuna" class="project-img" width="600" height="375" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="project-thumb-fallback" style="display: none;" aria-hidden="true">
+                    <i class="fas fa-print"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-category">WEB APP</span>
+              <h3 class="project-title">Percetakan Arjuna</h3>
+              <p class="project-subtitle">Sistem Manajemen Order</p>
+              <p class="project-desc">
+                Sistem manajemen order otomatis untuk Percetakan Arjuna yang menggantikan proses order manual sebelumnya, dibangun dengan TALL Stack.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fab fa-laravel text-laravel"></i> Laravel</span>
+                <span class="tech-pill"><i class="fas fa-bolt text-primary"></i> Livewire</span>
+                <span class="tech-pill"><i class="fas fa-mountain text-secondary"></i> Alpine.js</span>
+                <span class="tech-pill"><i class="fab fa-css3-alt text-css"></i> Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-outline btn-project-detail" aria-label="Buka detail proyek Percetakan Arjuna">
+                  <i class="fas fa-circle-info" aria-hidden="true"></i>
+                  <span>Lihat Detail</span>
+                </button>
+                <a href="https://github.com/rayshaayunda00/percetakan_arjuna.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-project-github">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Lihat di GitHub</span>
+                  <i class="fas fa-arrow-right btn-project-arrow" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyek 2: SiPangah -->
+          <article class="project-card reveal" data-project-index="1" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Lihat detail proyek Sipangah">
+            <div class="project-cover">
+              <div class="browser-frame">
+                <div class="browser-bar">
+                  <span class="browser-dot dot-red" aria-hidden="true"></span>
+                  <span class="browser-dot dot-yellow" aria-hidden="true"></span>
+                  <span class="browser-dot dot-green" aria-hidden="true"></span>
+                </div>
+                <div class="browser-window-content">
+                  <img src="images/sipangah.jpg" alt="Tampilan sistem informasi pengaduan masyarakat Sipangah" class="project-img" width="600" height="375" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <div class="project-thumb-fallback" style="display: none;" aria-hidden="true">
+                    <i class="fas fa-bullhorn"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-category">WEB APP</span>
+              <h3 class="project-title">Sipangah</h3>
+              <p class="project-subtitle">Sistem Pengaduan Masyarakat</p>
+              <p class="project-desc">
+                Sistem informasi berbasis web untuk mendigitalisasi layanan pengaduan masyarakat di Kelurahan Cupak Tangah. Memudahkan warga dalam mengirim dan melacak status laporan secara online, serta membantu admin dalam verifikasi dan tindak lanjut pengaduan.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fab fa-php text-primary"></i> PHP</span>
+                <span class="tech-pill"><i class="fas fa-database text-database"></i> MySQL</span>
+                <span class="tech-pill"><i class="fab fa-laravel text-laravel"></i> Laravel</span>
+                <span class="tech-pill"><i class="fab fa-css3-alt text-css"></i> Tailwind CSS</span>
+                <span class="tech-pill"><i class="fas fa-shield-halved text-emerald"></i> Laravel Breeze</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="btn btn-outline btn-project-detail" aria-label="Buka detail proyek Sipangah">
+                  <i class="fas fa-circle-info" aria-hidden="true"></i>
+                  <span>Lihat Detail</span>
+                </button>
+                <a href="https://github.com/rayshaayunda00/sipangah.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-project-github">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Lihat di GitHub</span>
+                  <i class="fas fa-arrow-right btn-project-arrow" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SERTIFIKASI (#certifications)
+    =============================================== -->
+    <section id="certifications" class="certifications section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Standar Kompetensi</span>
+          <h2 class="section-title">Sertifikasi</h2>
+          <p class="section-subtitle">Pengakuan dan sertifikasi profesional untuk memvalidasi keahlian teknis saya. Klik kartu untuk melihat detail sertifikat.</p>
+        </div>
+
+        <!-- Filter Kategori Sertifikat -->
+        <div class="cert-filter-wrapper reveal" role="group" aria-label="Filter Kategori Sertifikat">
+          <button type="button" class="cert-filter-btn active" data-filter="all" aria-pressed="true">Semua</button>
+          <button type="button" class="cert-filter-btn" data-filter="Web" aria-pressed="false">Web</button>
+          <button type="button" class="cert-filter-btn" data-filter="Database" aria-pressed="false">Database</button>
+          <button type="button" class="cert-filter-btn" data-filter="Java" aria-pressed="false">Java</button>
+          <button type="button" class="cert-filter-btn" data-filter="Linux" aria-pressed="false">Linux</button>
+          <button type="button" class="cert-filter-btn" data-filter="Marketing" aria-pressed="false">Marketing</button>
+          <button type="button" class="cert-filter-btn" data-filter="Bahasa" aria-pressed="false">Bahasa</button>
+          <button type="button" class="cert-filter-btn" data-filter="Magang" aria-pressed="false">Magang</button>
+        </div>
+
+        <!-- Grid Kartu Sertifikat -->
+        <div class="certifications-grid" id="certifications-grid" aria-label="Daftar Sertifikasi">
+          <!-- Kartu sertifikat di-render secara dinamis dari array sertifikat di script.js -->
+        </div>
+
+        <!-- Tombol Lihat Semua / Tampilkan Lebih Sedikit -->
+        <div class="cert-toggle-wrapper reveal" id="cert-toggle-wrapper" style="display: none;">
+          <button type="button" class="btn btn-outline cert-toggle-btn" id="cert-toggle-btn" aria-expanded="false" aria-controls="certifications-grid">
+            <span id="cert-toggle-text">Lihat Semua</span>
+            <i class="fas fa-chevron-down" id="cert-toggle-icon" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         KONTAK (#contact)
+    =============================================== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Mari Berkolaborasi</span>
+          <h2 class="section-title">Kontak Saya</h2>
+          <p class="section-subtitle">Tertarik bekerja sama atau ingin mendiskusikan peluang proyek? Kirimkan pesan Anda di bawah ini.</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Kolom Kiri: Info Kontak Langsung -->
+          <div class="contact-info-card reveal">
+            <div class="contact-status-card">
+              <div class="status-indicator">
+                <span class="status-pulse" aria-hidden="true"></span>
+                <span class="status-text">Siap Menerima Proyek Baru</span>
+              </div>
+              <p class="status-desc">
+                Saya selalu terbuka untuk mendiskusikan peluang kerja, proyek freelance, magang, maupun kerja sama tim.
+              </p>
+            </div>
+
+            <div class="contact-details-list">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:rayshaayuda@gmail.com" class="contact-value">rayshaayuda@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/rayshaayunda00" target="_blank" rel="noopener noreferrer" class="contact-value">https://github.com/rayshaayunda00</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/raysha-ayunda-putri-diesta-b150511ab" target="_blank" rel="noopener noreferrer" class="contact-value">https://www.linkedin.com/in/raysha-ayunda-putri-diesta-b150511ab</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+                <div>
+                  <span class="contact-label">Lokasi</span>
+                  <span class="contact-value">Indonesia (Tersedia untuk Remote)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Form Kontak -->
+          <div class="contact-form-card reveal">
+            <!-- 
+              CATATAN TEKNIS:
+              Secara default, form ini mengarahkan ke mailto klien email Anda secara transparan.
+              Jika Anda ingin form mengirim email langsung tanpa membuka aplikasi email:
+              1. Daftarkan email Anda di https://formspree.io
+              2. Ubah atribut form menjadi: action="https://formspree.io/f/YOUR_ID" method="POST"
+            -->
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Nama Lengkap <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon" aria-hidden="true"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required autocomplete="name">
+                </div>
+                <span class="form-error" id="name-error">Nama tidak boleh kosong.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="nama@contoh.com" required autocomplete="email">
+                </div>
+                <span class="form-error" id="email-error">Masukkan alamat email yang valid.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subjek Pesan <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag input-icon" aria-hidden="true"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Topik diskusi atau penawaran" required>
+                </div>
+                <span class="form-error" id="subject-error">Subjek tidak boleh kosong.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Isi Pesan <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tuliskan pesan atau detail penawaran Anda..." required rows="5"></textarea>
+                </div>
+                <span class="form-error" id="message-error">Pesan tidak boleh kosong.</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span>Kirim Pesan</span>
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       MODAL / POP UP DETAIL PROYEK
+  =============================================== -->
+  <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" aria-hidden="true" tabindex="-1">
+    <div class="project-modal-overlay" id="project-modal-overlay" aria-hidden="true"></div>
+    <div class="project-modal-container" role="document">
+      <button type="button" class="project-modal-close" id="project-modal-close" aria-label="Tutup detail proyek">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+
+      <div class="project-modal-content">
+        <div class="project-modal-image-wrapper">
+          <img id="project-modal-img" class="project-modal-img" src="" alt="Pratinjau Proyek">
+        </div>
+
+        <div class="project-modal-body">
+          <div class="project-modal-header">
+            <span id="project-modal-badge" class="project-category">WEB APP</span>
+            <h3 id="project-modal-title" class="project-modal-title"></h3>
+            <p id="project-modal-subtitle" class="project-modal-subtitle"></p>
+          </div>
+
+          <p id="project-modal-desc" class="project-modal-desc"></p>
+
+          <div class="project-modal-section">
+            <h4 class="project-modal-section-title">Fitur Utama</h4>
+            <ul id="project-modal-features" class="project-modal-features">
+              <!-- Rendered via JS -->
+            </ul>
+          </div>
+
+          <div class="project-modal-section">
+            <h4 class="project-modal-section-title">Teknologi</h4>
+            <div id="project-modal-tech" class="project-tech-stack">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <div class="project-modal-actions" id="project-modal-actions">
+            <!-- Action buttons (GitHub / Demo) rendered via JS -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</section>
 
+  <!-- ==============================================
+       MODAL / LIGHTBOX SERTIFIKAT
+  =============================================== -->
+  <div id="cert-lightbox" class="cert-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true" tabindex="-1">
+    <div class="lightbox-overlay" id="lightbox-overlay" aria-hidden="true"></div>
+    <div class="lightbox-container" role="document">
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Tutup pratinjau sertifikat">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah pengembang web front-end yang senang menciptakan tampilan menarik dan responsif.
-         Saya menguasai HTML, CSS, dan JavaScript serta framework seperti Laravel dan Flutter.
-         Tujuan saya adalah membuat website yang cepat, intuitif, dan mudah digunakan.</p>
-    </div>
-  </section>
+      <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Sertifikat sebelumnya">
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
 
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Keahlian</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <i class="fab fa-html5"></i>
-          <div>HTML</div>
+      <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Sertifikat berikutnya">
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-image-wrapper">
+          <img id="lightbox-img" class="lightbox-img" src="" alt="Pratinjau Sertifikat">
+          <div id="lightbox-fallback" class="lightbox-fallback" style="display: none;">
+            <i class="fas fa-award fallback-icon" aria-hidden="true"></i>
+            <span class="fallback-title">Pratinjau Sertifikat</span>
+            <span class="fallback-text">File gambar sertifikat belum tersedia di folder images/sertifikat/</span>
+          </div>
         </div>
-        <div class="skill">
-          <i class="fab fa-css3-alt"></i>
-          <div>CSS</div>
-        </div>
-        <div class="skill">
-          <i class="fab fa-js"></i>
-          <div>JavaScript</div>
-        </div>
-        <div class="skill">
-          <i class="fab fa-laravel"></i>
-          <div>Laravel</div>
-        </div>
-        <div class="skill">
-          <i class="fab fa-flutter"></i>
-          <div>Flutter</div>
-        </div>
-        <div class="skill">
-          <i class="fab fa-github"></i>
-          <div>GitHub</div>
+
+        <div class="lightbox-meta">
+          <div class="lightbox-details">
+            <span id="lightbox-counter" class="lightbox-counter">1 DARI 16</span>
+            <h3 id="lightbox-title" class="lightbox-title"></h3>
+            <p id="lightbox-issuer" class="lightbox-issuer"></p>
+            <p id="lightbox-date" class="lightbox-date"></p>
+          </div>
+          <div class="lightbox-actions" id="lightbox-actions">
+            <!-- Tombol Buka PDF di Tab Baru -->
+            <a id="lightbox-pdf-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-file-pdf" aria-hidden="true"></i>
+              <span>Buka PDF</span>
+            </a>
+            <!-- Tombol Unduh File PDF Asli -->
+            <a id="lightbox-download-btn" href="#" download class="btn btn-sm btn-outline">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              <span>Unduh</span>
+            </a>
+            <!-- Tombol Kredensial Eksternal (Opsional) -->
+            <a id="lightbox-cred-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              <span>Lihat Kredensial</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Proyek</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Website Klinik Hewan</h3>
-          <p>Sistem informasi klinik hewan berbasis Laravel dan Blade, dilengkapi dengan CRUD dan fitur appointment.</p>
-        </div>
-        <div class="project-card">
-          <h3>Aplikasi Flutter Perpustakaan</h3>
-          <p>Aplikasi mobile CRUD dengan integrasi API Laravel dan tampilan modern berbasis Material Design.</p>
-        </div>
-        <div class="project-card">
-          <h3>Landing Page UMKM</h3>
-          <p>Landing page promosi produk lokal dengan desain interaktif dan SEO-friendly.</p>
-        </div>
+  <!-- ==============================================
+       FOOTER
+  =============================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="logo footer-logo" aria-label="Beranda Raysha Ayunda">
+          <span class="logo-mark">R</span>
+          <span class="logo-text">Raysha<span>Ayunda</span></span>
+        </a>
+        <p class="footer-tagline">Web Developer yang berfokus pada pengembangan sistem berbasis web modern menggunakan Laravel, Livewire, dan Tailwind CSS.</p>
+        
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#certifications">Sertifikasi</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Kontak Saya</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Nama" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="message" placeholder="Pesan" required></textarea>
-        <button type="submit" class="btn">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
+      <div class="footer-divider"></div>
 
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Raysha Ayunda — Dibuat dengan ❤️</p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year"></span> <strong>Raysha Ayunda Putri Diesta</strong>. Dibuat dengan presisi & standar web modern.
+        </p>
+        <a href="#home" class="btn-back-to-top" aria-label="Kembali ke atas halaman">
+          <span>Atas</span>
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   </footer>
 
+  <!-- Main JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
