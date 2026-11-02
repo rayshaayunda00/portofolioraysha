@@ -220,7 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { judul: "Java Programming – Final Exam", penerbit: "Oracle Academy", tanggal: "12 Juni 2024", kategori: "Java", image: "images/sertifikat/java-programming-final-exam.jpg", gambar: "images/sertifikat/java-programming-final-exam.jpg", pdf: "files/sertifikat/java-programming-final-exam.pdf", linkKredensial: "" },
     { judul: "Java Programming", penerbit: "Oracle Academy", tanggal: "12 Juni 2024", kategori: "Java", image: "images/sertifikat/java-programming.jpg", gambar: "images/sertifikat/java-programming.jpg", pdf: "files/sertifikat/java-programming.pdf", linkKredensial: "" },
     { judul: "Java Fundamentals – Final Exam", penerbit: "Oracle Academy", tanggal: "21 April 2024", kategori: "Java", image: "images/sertifikat/java-fundamentals-final-exam.jpg", gambar: "images/sertifikat/java-fundamentals-final-exam.jpg", pdf: "files/sertifikat/java-fundamentals-final-exam.pdf", linkKredensial: "" },
-    { judul: "Java Fundamentals", penerbit: "Oracle Academy", tanggal: "21 April 2024", kategori: "Java", image: "images/sertifikat/java-fundamentals.jpg", gambar: "images/sertifikat/java-fundamentals.jpg", pdf: "files/sertifikat/java-fundamentals.pdf", linkKredensial: "" }
+    { judul: "Java Fundamentals", penerbit: "Oracle Academy", tanggal: "21 April 2024", kategori: "Java", image: "images/sertifikat/java-fundamentals.jpg", gambar: "images/sertifikat/java-fundamentals.jpg", pdf: "files/sertifikat/java-fundamentals.pdf", linkKredensial: "" },
+    { judul: "AWS Academy Graduate – Cloud Foundations", penerbit: "AWS Academy (Amazon Web Services)", tanggal: "26 Juni 2025", kategori: "Cloud", image: "images/sertifikat/aws-academy-graduate-cloud-foundations.jpg", gambar: "images/sertifikat/aws-academy-graduate-cloud-foundations.jpg", pdf: "files/sertifikat/aws-academy-graduate-cloud-foundations.pdf", linkKredensial: "https://www.credly.com/go/GES028DL" }
   ];
 
   // State Filter & Pagination
@@ -800,8 +801,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!profileCard || !certEl || !gradEl) return;
 
-    // Jumlah sertifikat dihitung otomatis dari array sertifikat di script.js (saat ini 16)
-    const certCount = Array.isArray(sertifikat) ? sertifikat.length : 16;
+    // Jumlah sertifikat dihitung otomatis dari array sertifikat di script.js
+    const certCount = Array.isArray(sertifikat) ? sertifikat.length : 17;
     const gradYear = 2026;
 
     const animateNumber = (el, target, duration = 1200) => {
