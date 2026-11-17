@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'Laravel Web Development',
       'Livewire & Tailwind CSS',
       'Sistem Informasi Berbasis Web',
-      'RESTful API & Database MySQL'
     ];
     
     if (prefersReducedMotion) {
@@ -211,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { judul: "Brand Positioning Introduction", penerbit: "MySkill", tanggal: "28 September 2026", kategori: "Marketing", image: "images/sertifikat/brand-positioning-introduction.jpg", gambar: "images/sertifikat/brand-positioning-introduction.jpg", pdf: "files/sertifikat/brand-positioning-introduction.pdf", linkKredensial: "" },
     { judul: "Branding Introduction", penerbit: "MySkill", tanggal: "28 September 2026", kategori: "Marketing", image: "images/sertifikat/branding-introduction.jpg", gambar: "images/sertifikat/branding-introduction.jpg", pdf: "files/sertifikat/branding-introduction.pdf", linkKredensial: "" },
     { judul: "Marketing Introduction", penerbit: "MySkill", tanggal: "28 September 2026", kategori: "Marketing", image: "images/sertifikat/marketing-introduction.jpg", gambar: "images/sertifikat/marketing-introduction.jpg", pdf: "files/sertifikat/marketing-introduction.pdf", linkKredensial: "" },
-    { judul: "Sertifikat Magang: Junior Data Analyst", penerbit: "PT Digitama Sinergi Indonesia", tanggal: "Juni 2026", kategori: "Magang", image: "images/sertifikat/sertifikat-magang-digitama.jpg", gambar: "images/sertifikat/sertifikat-magang-digitama.jpg", pdf: "files/sertifikat/sertifikat-magang-digitama.pdf", linkKredensial: "" },
+    { judul: "Sertifikat Magang: Junior System Analyst", penerbit: "PT Digitama Sinergi Indonesia", tanggal: "Juni 2026", kategori: "Magang", image: "images/sertifikat/sertifikat-magang-digitama.jpg", gambar: "images/sertifikat/sertifikat-magang-digitama.jpg", pdf: "files/sertifikat/sertifikat-magang-digitama.pdf", linkKredensial: "" },
     { judul: "NDG Linux Essentials", penerbit: "Cisco Networking Academy", tanggal: "12 Juli 2024", kategori: "Linux", image: "images/sertifikat/ndg-linux-essentials.jpg", gambar: "images/sertifikat/ndg-linux-essentials.jpg", pdf: "files/sertifikat/ndg-linux-essentials.pdf", linkKredensial: "" },
     { judul: "Database Programming with SQL – Final Exam", penerbit: "Oracle Academy", tanggal: "4 Juli 2024", kategori: "Database", image: "images/sertifikat/database-programming-final-exam.jpg", gambar: "images/sertifikat/database-programming-final-exam.jpg", pdf: "files/sertifikat/database-programming-final-exam.pdf", linkKredensial: "" },
     { judul: "Database Programming with SQL", penerbit: "Oracle Academy", tanggal: "4 Juli 2024", kategori: "Database", image: "images/sertifikat/database-programming.jpg", gambar: "images/sertifikat/database-programming.jpg", pdf: "files/sertifikat/database-programming.pdf", linkKredensial: "" },
